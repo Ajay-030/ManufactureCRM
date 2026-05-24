@@ -55,7 +55,7 @@ const Leads = () => {
     setLoading(true);
     setError('');
     try {
-      const response = await api.get('/leads');
+      const response = await api.get('/api/leads');
       if (response.success) {
         setLeads(response.data);
       }

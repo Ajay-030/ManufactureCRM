@@ -21,7 +21,7 @@ const Performance = () => {
     setLoading(true);
     setError('');
     try {
-      const response = await api.get('/performance');
+      const response = await api.get('/api/performance');
       if (response.success) {
         setPerformanceList(response.data);
       }

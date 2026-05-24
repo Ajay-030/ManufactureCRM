@@ -40,7 +40,7 @@ const Clients = () => {
     setLoading(true);
     setError('');
     try {
-      const response = await api.get('/clients');
+      const response = await api.get('/api/clients');
       if (response.success) {
         setClients(response.data);
       }

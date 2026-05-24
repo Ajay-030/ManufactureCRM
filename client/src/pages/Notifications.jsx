@@ -25,7 +25,7 @@ const Notifications = () => {
     setLoading(true);
     setError('');
     try {
-      const response = await api.get('/notifications');
+      const response = await api.get('/api/notifications');
       if (response.success) {
         setNotifications(response.data);
       }
