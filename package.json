@@ -1,0 +1,14 @@
+{
+  "name": "manufacture-crm",
+  "version": "1.0.0",
+  "description": "MERN Stack Business Development Associate Team Management Dashboard",
+  "scripts": {
+    "install-client": "cd client && npm install",
+    "install-server": "cd server && npm install",
+    "install-all": "npm run install-server && npm run install-client",
+    "start-server": "cd server && npm start",
+    "start-client": "cd client && npm run dev"
+  },
+  "author": "ManufactureCRM Team",
+  "license": "MIT"
+}
