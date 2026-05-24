@@ -35,7 +35,7 @@ export const AuthProvider = ({ children }) => {
     setLoading(true);
     setError(null);
     try {
-      const response = await api.post('/auth/login', { email, password });
+      const response = await api.post('/api/auth/login', { email, password });
       const { token, ...userData } = response.data;
       
       localStorage.setItem('manufacture_token', token);
@@ -56,7 +56,7 @@ export const AuthProvider = ({ children }) => {
     setLoading(true);
     setError(null);
     try {
-      const response = await api.post('/auth/signup', {
+      const response = await api.post('/api/auth/signup', {
         fullName,
         email,
         password,

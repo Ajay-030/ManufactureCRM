@@ -82,7 +82,7 @@ const Clients = () => {
     setSubmitting(true);
     try {
       const payload = { companyName, contactPerson, email, phone, address, requirement };
-      const response = await api.post('/clients', payload);
+      const response = await api.post('/api/clients', payload);
       if (response.success) {
         setIsAddOpen(false);
         fetchClients();

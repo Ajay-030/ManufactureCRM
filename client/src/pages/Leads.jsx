@@ -99,7 +99,7 @@ const Leads = () => {
     setSubmitting(true);
     try {
       const payload = { companyName, clientName, phone, email, notes, value: Number(value) || 0 };
-      const response = await api.post('/leads', payload);
+      const response = await api.post('/api/leads', payload);
       if (response.success) {
         setIsAddOpen(false);
         fetchLeads();
