@@ -13,7 +13,7 @@ const Navbar = ({ onMenuClick }) => {
   useEffect(() => {
     const fetchUnreadCount = async () => {
       try {
-        const response = await api.get('/notifications');
+        const response = await api.get('/api/notifications');
         if (response.success && Array.isArray(response.data)) {
           const unreads = response.data.filter(n => !n.read).length;
           setUnreadCount(unreads);

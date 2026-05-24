@@ -31,9 +31,9 @@ const Dashboard = () => {
     setError(null);
     try {
       const [leadsRes, clientsRes, notificationsRes] = await Promise.all([
-        api.get('/leads'),
-        api.get('/clients'),
-        api.get('/notifications'),
+        api.get('/api/leads'),
+        api.get('/api/clients'),
+        api.get('/api/notifications'),
       ]);
 
       if (leadsRes.success) setLeads(leadsRes.data);
